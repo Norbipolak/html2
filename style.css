@@ -1,0 +1,89 @@
+* {
+    box-sizing: border-box;
+}
+
+body {
+    height:5000px;
+}
+
+.display-block {
+    display: block;
+}
+
+.inline {
+    display: inline;
+    width: 500px;
+    border: 1px solid green;
+}
+
+.inline-block {
+    display: inline-block;
+    width: 50px;
+    height: 30px;
+    line-height: 30px;
+    border: 30px solid indianred;
+}
+
+.static-square {
+    width: 250px;
+    height: 250px;
+    position: static;
+    left: 200px;
+    background-color: brown;
+}
+
+.relative-square {
+    width: 250px;
+    height: 250px;
+    position: relative;
+    top: 20px;
+    left: 125px;
+    background-color: rebeccapurple;
+}
+
+.absolute-square {
+    width: 250px;
+    height: 250px;
+    position: absolute;
+    /*top:20px;*/
+    left: 125px;
+    /*bottom:15px;*/
+    background-color: aqua;
+    z-index: 1;
+}
+
+.left-50 {
+    left: 50px;
+    background-color: pink;
+    z-index: 2;
+}
+
+.absolute-square-center {
+    position: absolute;
+    width:150px;
+    height:150px;
+    background-color: black;
+    /*left:50px;
+    top:50px;*/
+    left:0;
+    right:0;
+    top:0;
+    bottom:0;
+    margin:auto
+}
+.fixed-square {
+    position:fixed;
+    width:125px;
+    height:125px;
+    background-color: red;
+    top:50%;
+    left:50%;
+    z-index:3;
+}
+.sticky-square {
+    position:sticky;
+    width:150px;
+    height:150px;
+    background-color: blueviolet;
+    top:25px;
+}

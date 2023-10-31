@@ -1,0 +1,83 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+    <h1>Display tulajdonságok</h1>
+    <h2>Block</h2>    
+    <p>
+        A display: block tulajdonsággal ellátott tag alapértelmezetten 100% 
+        széles és 0px magas.
+    </p>
+
+<span class="display-block">1</span>
+<span class="display-block">2</span>
+<span class="display-block">3</span>
+
+<h2>Inline</h2>
+<p>
+    Az inline elemek egymás mellett helyezkednek el. <br>
+    Nem kaphatnak sem szélességet sem magasságot.
+</p>
+<div class="inline">1</div>
+<div class="inline">2</div>
+<div class="inline">3</div>
+
+<h2>Inline-block</h2>
+<p>
+    Az inline-block nagyon hasonlít az inline-ra,
+    csak meg tudunk határozni szélességet és magasságot
+</p>
+<div class="inline-block">1</div>
+<div class="inline-block">2</div>
+<div class="inline-block">3</div>
+
+<h1>Pozícionálás</h1>
+<h2>Static</h2>
+<p>
+    A static az alapértelmezett CSS pozició. <br>
+    Nem müködnek nála a top, left, right, bottom tulajdonságok.
+</p>
+
+<div class="static-square"></div>
+
+<h2>Relatív</h2>
+<p>
+    A relatív esetében müködnek a top, right, left, bottom tulajdonságok.
+</p>
+
+<div class="relative-square"></div>
+<h2>Absolute</h2>
+<p>
+    Az absolute egy abszolút pozíciót határoz meg a képernyőn.
+</p>
+
+<div class="absolute-square"></div>
+<div class="absolute-square left-50"></div>
+
+<div class="relative-square" style="top:350px;">
+    <div class="absolute-square-center"></div>
+</div>
+<h2>Fixed</h2>
+<p>
+    A fixed mindig ugyanabban a pozícióban található a képrenyőn.
+</p>
+
+<div class="fixed-square"></div>
+
+<h2>Sticky</h2>
+<p>
+    A sticky a relative és a fixed keveréke. Egészen addig, amíg 
+    a stickynek a teteje el nem ér egy egy taávolságot a 
+    böngészőablak felső részétől, addig relative-ként viselkedik,
+    utána fixed-ként
+</p>
+
+<div class="sticky-square"></div>
+
+</body>
+</html>
